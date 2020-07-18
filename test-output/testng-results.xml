@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="93964" started-at="2020-07-18T09:15:05Z" finished-at="2020-07-18T09:16:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="93964" started-at="2020-07-18T09:15:05Z" finished-at="2020-07-18T09:16:39Z">
+      <class name="com.amazon.tests.SearchnCheckOutPageTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.amazon.tests.SearchnCheckOutPageTest@7d907bac]" name="beforeClass" is-config="true" duration-ms="7541" started-at="2020-07-18T14:45:05Z" finished-at="2020-07-18T14:45:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="loginWithValidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.amazon.tests.SearchnCheckOutPageTest@7d907bac]" name="loginWithValidCredentials" duration-ms="26971" started-at="2020-07-18T14:45:13Z" data-provider="loginCred" finished-at="2020-07-18T14:45:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[M@dhuri1986]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method status="FAIL" signature="searchfnctionlty(java.lang.String)[pri:2, instance:com.amazon.tests.SearchnCheckOutPageTest@7d907bac]" name="searchfnctionlty" duration-ms="59248" started-at="2020-07-18T14:45:40Z" data-provider="hmpgdata" finished-at="2020-07-18T14:46:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[75 inch tv]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-KEHHS9M', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., clearSystemFiles: true, databaseEnabled: false, desired: {appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., clearSystemFiles: true, deviceName: SM_M205F, noReset: true, platformName: android, version: 10}, deviceManufacturer: samsung, deviceModel: SM-M205F, deviceName: 3401bff6870b265f, deviceScreenSize: 1080x2340, deviceUDID: 3401bff6870b265f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, platform: LINUX, platformName: Android, platformVersion: 10, takesScreenshot: true, version: 10, warnings: {}, webStorageEnabled: false}
+Session ID: 25b41aba-bf01-4cff-9499-c6a9da97510f
+*** Element info: {Using=id, value=a-autoid-3-announce}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-KEHHS9M', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., clearSystemFiles: true, databaseEnabled: false, desired: {appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., clearSystemFiles: true, deviceName: SM_M205F, noReset: true, platformName: android, version: 10}, deviceManufacturer: samsung, deviceModel: SM-M205F, deviceName: 3401bff6870b265f, deviceScreenSize: 1080x2340, deviceUDID: 3401bff6870b265f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, platform: LINUX, platformName: Android, platformVersion: 10, takesScreenshot: true, version: 10, warnings: {}, webStorageEnabled: false}
+Session ID: 25b41aba-bf01-4cff-9499-c6a9da97510f
+*** Element info: {Using=id, value=a-autoid-3-announce}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.amazon.pages.SearchnCheckOutPage.searchKeyEntry(SearchnCheckOutPage.java:70)
+	at com.amazon.tests.SearchnCheckOutPageTest.searchfnctionlty(SearchnCheckOutPageTest.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchfnctionlty -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.amazon.tests.SearchnCheckOutPageTest@7d907bac]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-07-18T14:46:39Z" finished-at="2020-07-18T14:46:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.amazon.tests.SearchnCheckOutPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
